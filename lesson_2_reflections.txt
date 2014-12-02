@@ -1,0 +1,10 @@
+git init - Creates a repository at the working directory
+git status - prints the status of the repository at the working directory
+
+Reflections:
+What happens when you initialize a repository? Why do you need to do it?
+A file called .git is created which contains the repository. This needs
+to be done in order to make commits and check the status of the repository.
+Without it, git will be unable to tell if the files are tracked.
+--
+
