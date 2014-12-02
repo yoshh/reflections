@@ -1,0 +1,67 @@
+FC *firstfilename* *secondfilename* - compares the two files and prints the differences (For windows)
+diff -u *firstfilename* *secondfilename* - compares the two files and prints the differences (For OS/X)
+git diff *first_id* *second_id* - compares the two ids and prints the differences (For Git)
+
+cd *directory* - to change directories
+echo 'alias='fileDirectory'' >> ~/.bashrc - to add a shortcut to the file on the command line using the alias
+makedir *name* - makes a directory at the working directory
+pwd - print working directory
+ls - list the files in the working directory
+git clone *url* - puts a copy of the repository in the working directory
+git log - creates a log of all the commits made. press q to quit
+touch *filename* - creates a file with the filename at the working directory
+
+Reflections:
+--
+How did viewing a diff between two versions of a file help you see the bug
+that was introduced?
+
+Well, viewing a diff is very helpful because it allows me to see
+only the changes/differences made in the file. With that I have
+a much easier time spotting the mistakes that I might have made while 
+modifying the file.
+--
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+I can save a lot of time by being able to compare my files when looking for errors.
+I may also want to bring back some of the stuff from previous 
+versions which would save me timehaving to rewrite it.
+--
+What do you think are the pros and cons of manually choosing when to create a commit,
+like you do in Git, vs having versions automatically saved, like Google docs does?
+
+The pros are that I have a lot of flexibility on when I should save. If I have good
+judgement then each commit I make will be logical and useful. I won't have to worry
+about my versions being too cluttered or vice versa. The cons is that I could make
+useless commits if my judgement is bad. I must also manually commit so there's a
+possibility of forgetting.
+--
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file seperately?
+
+Git is used for version control of many types of files; many of which will be
+dependent on each other, so it would be useful to be able to save multiple
+files in one commit. Other version control such as Google Docs only deal
+with files that are not dependent on others, so it is not needed.
+--
+How can you use the commands git log and git diff to view the history of files?
+
+If you are in the repository directory, you can use git log to view the commits
+made on the file and their descriptions. If you need to compare 2 files, then
+you can use git diff by copying the ids of the commits you would like to compare
+and use git diff *id1* *id2* to see the changes made.
+--
+How might using version control make you more confident to make changes that could
+break something?
+
+I wouldn't have to worry about breaking something because I could go back
+to a previous version of my file and fix it.
+--
+Now that you have your workspace set up, what do you want to try using Git for?
+
+I want to use Git for version control in order to be a more efficient programmer.
+I can achieve that if I can go back to previous versions to quickly find errors,
+or if I want go back to a file in the past for use. I can also confidently
+experiment with my files because I know I am not at such a risk of breaking
+my projects.
