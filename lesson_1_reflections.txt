@@ -10,6 +10,7 @@ ls - list the files in the working directory
 git clone *url* - puts a copy of the repository in the working directory
 git log - creates a log of all the commits made. press q to quit
 touch *filename* - creates a file with the filename at the working directory
+git checkout *id* - Goes to a previous file you have committed
 
 Reflections:
 --
