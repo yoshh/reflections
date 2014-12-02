@@ -48,3 +48,8 @@ the two branches so that the resulting branch will have
 two parents. We represent it in the diagram like that because
 the merged branch is able to reach both the first and second
 branch that was merged.
+--
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Git's automatic merging saves a lot of time when merging two commits. You lose
+some flexibility in the process though.
