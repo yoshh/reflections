@@ -3,8 +3,13 @@ git status - prints the status of the repository at the working directory
 git add - adds a file to the staging area to be committed
 git diff --staged - compares the staging area with the most recent commit
 git diff - compares the working directory to the staging area
-git checkout master - goes back to the master(?)
-
+git checkout master - goes back to the master branch
+git show - shows the last commit, and compares it with the previous commit if possible
+git log -n*numberofcommits* - prints the first number of commits
+git branch - shows all the branches in the repository
+git branch *name* - creates a new branch at the repository
+git merge *branch1* *branch2* - merges the two branches provided that you are checked out 
+on 1 of the branches. If you are on another branch, then git will merge the 3 branches, so be careful
 
 Reflections:
 What happens when you initialize a repository? Why do you need to do it?
