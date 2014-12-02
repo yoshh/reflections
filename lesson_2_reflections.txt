@@ -1,5 +1,10 @@
 git init - Creates a repository at the working directory
 git status - prints the status of the repository at the working directory
+git add - adds a file to the staging area to be committed
+git diff --staged - compares the staging area with the most recent commit
+git diff - compares the working directory to the staging area
+git checkout master - goes back to the master(?)
+
 
 Reflections:
 What happens when you initialize a repository? Why do you need to do it?
@@ -7,4 +12,39 @@ A file called .git is created which contains the repository. This needs
 to be done in order to make commits and check the status of the repository.
 Without it, git will be unable to tell if the files are tracked.
 --
+How is the staging area different from the working directory and the repository? 
+What value do you think it offers?
 
+The staging area is used to decide which files are going to be committed
+to the repository. It is useful for preparation since it would be
+dangerous to commit as you go. It offers a lot of flexibility.
+--
+How can you use the staging area to make sure you have one commit per logical change?
+
+You can use the staging area to only add the files that makes one logical
+change. You can compare the staging area with either the working directory
+or the repository to make sure you commit properly.
+--
+What are some situations when branches would be helpful in keeping your 
+history organized? How would branches help?
+
+Branches would be helpful when I want to make different versions of my
+projects, such as an experimental version or a version in a different language.
+I would be able to make changes to the different versions and have my commits
+be organized to their respective branches.
+--
+How do the diagrams help you visualize the branch structure?
+
+I can see which commits can be reached by starting at a branch and
+moving backwards. The only way to reach an unreachable commit
+is to create a branch for it and checkout the branch. With a branch
+structure, I can keep track of which commit belongs to a branch.
+--
+What is the result of merging two branches together? 
+Why do we represent it in the diagram the way we do?
+
+Merging two branches together essentially combines
+the two branches so that the resulting branch will have
+two parents. We represent it in the diagram like that because
+the merged branch is able to reach both the first and second
+branch that was merged.
