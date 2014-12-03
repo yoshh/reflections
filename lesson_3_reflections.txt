@@ -1,0 +1,8 @@
+git remote - lists the remotes in the working directory
+git remote add *name* *url* - creates a remote
+git remove -v - a more verbose list of remotes
+
+Reflections:
+When would you want to use a remote repository rather than keeping all your work local?
+When you want to share your repository or collaborate with other people.
+
