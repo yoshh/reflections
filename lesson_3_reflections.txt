@@ -1,8 +1,24 @@
 git remote - lists the remotes in the working directory
 git remote add *name* *url* - creates a remote
 git remove -v - a more verbose list of remotes
+git push *gitrepos* *branch* - pushes the branch and all changes into the git repos
+git pull *gitrepos* *branch* - pulls the branch and all changes into your local repos
 
 Reflections:
 When would you want to use a remote repository rather than keeping all your work local?
 When you want to share your repository or collaborate with other people.
 
+--
+Why might you want to always pull changes manually rather than having Git 
+automatically stay up-to-date with your remote repository?
+
+Having Git automatically stay up to date could be detrimental
+because you might not want to update your repository yet. Being
+able to manually pull changes allows much more flexibility in that sense.
+--
+Describe the differences between forks, clones, and branches. 
+When would you use one instead of another?
+
+Forks clone a repository from another user on GitHub to your GitHub.
+Clones clone a repository to your computer.
+Branches are commits that have more than 1 parent
